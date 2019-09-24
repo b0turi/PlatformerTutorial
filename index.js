@@ -1,7 +1,7 @@
 let canvas = document.getElementById('gameCanvas');
 let ctx = canvas.getContext('2d');
 
-let p = new Player(50, 50, canvas.height);
+let p = new Player(400, 400);
 
 let prevTime = 0;
 function gameLoop(time) {
