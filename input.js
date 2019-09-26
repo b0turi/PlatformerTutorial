@@ -1,19 +1,19 @@
 var inputMap = {
 	left : false,
-	right: false,
+	right : false,
 	jump : false
-}
+};
 
 let keyBindings = {
-	65 : 'left',
-	68 : 'right',
-	87 : 'jump'
-}
+	37 : 'left',
+	39 : 'right',
+	32 : 'jump'
+};
 
-window.addEventListener('keydown', function(e) { 
+window.addEventListener('keydown', function(e) {
 	inputMap[keyBindings[e.keyCode]] = true;
 });
 
-window.addEventListener('keyup', function(e) { 
+window.addEventListener('keyup', function(e) {
 	inputMap[keyBindings[e.keyCode]] = false;
 });

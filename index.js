@@ -1,16 +1,14 @@
+let canvas = document.getElementById("gameCanvas");
+let ctx = canvas.getContext("2d");
 
-let canvas = document.getElementById('gameCanvas');
-let ctx = canvas.getContext('2d');
-
-let p = new Player(50, 50, canvas.height);
-
+let p = new Player(400, 400);
 
 let prevTime = 0;
-function gameLoop(time) {
-	let dt = time - prevTime;
-	prevTime = time;
+function gameLoop(timestamp) {
+	let dt = timestamp - prevTime;
+	prevTime = timestamp;
 
-	ctx.clearRect(0, 0, canvas.width, canvas.height); 
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	p.update(dt);
 	p.draw(ctx);
