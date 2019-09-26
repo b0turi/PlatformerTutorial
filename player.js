@@ -4,11 +4,11 @@ var state = {
 	JUMPING : 2
 }
 
-function Player(x, y) {
+function Player (x, y) {
 	this.position = {
 		x : x,
 		y : y
-	};
+	}
 	this.width = 50;
 	this.height = 50;
 
