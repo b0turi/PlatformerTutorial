@@ -50,7 +50,7 @@ function Player (x, y) {
 				this.state = state.RUNNING;
 		}
 
-		this.velocity.x = this.inputForce + 5;
+		this.velocity.x = this.inputForce;
 		this.velocity.y += this.gravity / dt;
 
 		this.position = vectorAdd(this.velocity, this.position);
